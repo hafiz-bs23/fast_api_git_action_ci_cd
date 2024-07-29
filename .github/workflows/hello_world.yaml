@@ -24,3 +24,9 @@ jobs:
       - name: Goodbye world
         run: echo "Goodbye world"
         shell: bash
+  revive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Revive world
+        run: echo "Revive world"
+        shell: bash
