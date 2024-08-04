@@ -9,4 +9,4 @@ async def root():
 
 @app.get("/omg")
 async def sayOmg():
-        return {"data": "Oh my F***ing god it is working"}
+    return {"data": "Oh my F***ing god it is working"}
