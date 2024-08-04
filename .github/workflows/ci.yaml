@@ -54,7 +54,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker compose up --build -t 
+          docker compose up --build -d
         shell: bash
 
 

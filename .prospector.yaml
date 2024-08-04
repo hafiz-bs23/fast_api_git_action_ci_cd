@@ -12,13 +12,12 @@ ignore-paths:
 mypy:
   run: true
   options:
-    ignore-missing-imports: true
+    ignore-missing-imports: false
     follow-imports: skip
 
 pylint:
   options:
     extension-pkg-allow-list: mypy
-    ignore-missing-imports: true
   disable:
     - too-few-public-methods
     - missing-docstring
