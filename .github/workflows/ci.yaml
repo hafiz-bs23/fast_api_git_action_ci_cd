@@ -28,6 +28,29 @@ jobs:
           pytest
         shell: bash
 
+  scan:
+    name: Static Code Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Code Scan
+        uses: jpetrucciani/prospector-check@master
+
+
+  build:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: |
+          docker compose up --build -t 
+        shell: bash
+
 
 
 
