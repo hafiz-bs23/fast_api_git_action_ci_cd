@@ -18,6 +18,7 @@ mypy:
 pylint:
   options:
     extension-pkg-allow-list: mypy
+    ignore-missing-imports: true
   disable:
     - too-few-public-methods
     - missing-docstring
@@ -36,7 +37,6 @@ mccabe:
 pycodestyle:
   disable:
     - E126
-    - E0401
 
 pydocstyle:
   run: false
