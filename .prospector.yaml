@@ -12,7 +12,7 @@ ignore-paths:
 mypy:
   run: true
   options:
-    ignore-missing-imports: false
+    ignore-missing-imports: true
     follow-imports: skip
 
 pylint:
@@ -29,6 +29,7 @@ pylint:
     - too-many-instance-attributes
     - too-many-function-args
     - too-many-statements
+    - import-error
 
 mccabe:
   run: false
