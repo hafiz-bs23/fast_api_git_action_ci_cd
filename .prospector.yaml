@@ -36,6 +36,7 @@ mccabe:
 pycodestyle:
   disable:
     - E126
+    - E0401
 
 pydocstyle:
   run: false
