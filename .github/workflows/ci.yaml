@@ -29,6 +29,6 @@ jobs:
         run: poetry install
 
       - name: Check code quantity
-        run: poetry run poetry black-check
+        run: poetry run poetry black --check .
 
 
