@@ -1,0 +1,51 @@
+output-format: grouped
+
+# strictness: veryhigh
+# doc-warnings: no
+# test-warnings: no
+max-line-length: 120
+# pep8: full
+
+ignore-paths:
+  - docs/
+
+mypy:
+  run: true
+  options:
+    ignore-missing-imports: true
+    follow-imports: skip
+
+pylint:
+  options:
+    extension-pkg-allow-list: mypy
+  disable:
+    - too-few-public-methods
+    - missing-docstring
+    - star-args
+    - consider-using-f-string
+    - too-many-locals # TODO: clean up these complexity problems
+    - too-many-branches
+    - too-many-arguments
+    - too-many-instance-attributes
+    - too-many-function-args
+    - too-many-statements
+    - import-error
+
+mccabe:
+  run: false
+
+pycodestyle:
+  disable:
+    - E126
+
+pydocstyle:
+  run: false
+  disable:
+    - D100
+    - D101
+    - D102
+    - D103
+    - D107
+    - D205
+    - D400
+    - D401
